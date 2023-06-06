@@ -1,59 +1,59 @@
-# #DAY-4
-# #4.1
-# #HEAD or TAILS
+#DAY-4
+#4.1
+#HEAD or TAILS
 
-# import random
+import random
 
-# test_seed = int(input("Enter your test number :"))
-# random.seed(test_seed)
+test_seed = int(input("Enter your test number :"))
+random.seed(test_seed)
 
-# test_coin = random.randint(0,1)
+test_coin = random.randint(0,1)
 
-# if test_coin == 1:
-#     print("Head")
-# else: 
-#     print("Tails")
-
-
-# #4.1.
-# #Pay the Bill
-# import random
-
-# test_seed = input("Enter the test number :")
-# random.seed(test_seed)
-
-# name_input = input("Enter your Friends name:")
-# name_list = name_input.split(",")
-
-# no_of_items = len(name_list)
-
-# random_choice = random.randint(0,no_of_items-1)
-
-# pay_name = (name_list[random_choice])
-
-# print(f"the bill will be paid by {pay_name}")
+if test_coin == 1:
+    print("Head")
+else: 
+    print("Tails")
 
 
+#4.1.
+#Pay the Bill
+import random
 
-# #4.3
-# #Treasure Game 
-# row1 = ['🟥','🟥','🟥']
-# row2 = ['🟥','🟥','🟥']
-# row3 = ['🟥','🟥','🟥']
+test_seed = input("Enter the test number :")
+random.seed(test_seed)
 
-# map = [row1,row2,row3]
-# print(f"{row1}\n{row2}\n{row3}")
-# position = input ("Enter the position where you want to hide the treasure: ")
+name_input = input("Enter your Friends name:")
+name_list = name_input.split(",")
 
-# horizontal = int(position[0])
-# vertical = int(position[1])
+no_of_items = len(name_list)
 
-# selected_row = map[vertical-1]
-# selected_row[horizontal-1] = "T"
+random_choice = random.randint(0,no_of_items-1)
 
-# print(f"{row1}\n{row2}\n{row3}")
+pay_name = (name_list[random_choice])
 
-#4.4.
+print(f"the bill will be paid by {pay_name}")
+
+
+
+#4.3
+#Treasure Game 
+row1 = ['🟥','🟥','🟥']
+row2 = ['🟥','🟥','🟥']
+row3 = ['🟥','🟥','🟥']
+
+map = [row1,row2,row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input ("Enter the position where you want to hide the treasure: ")
+
+horizontal = int(position[0])
+vertical = int(position[1])
+
+selected_row = map[vertical-1]
+selected_row[horizontal-1] = "T"
+
+print(f"{row1}\n{row2}\n{row3}")
+
+# 4.4.
 #Rock-Paper-Scissor
 import random
 
